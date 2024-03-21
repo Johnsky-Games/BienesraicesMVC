@@ -3,7 +3,7 @@
         'name' => 'john/bienesraices',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'cd9574225d0f8444384ddacb6356b458c4c0c280',
+        'reference' => 'c018f6597465d496f04a9bfb99c9cdee5a107453',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -31,7 +31,7 @@
         'john/bienesraices' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'cd9574225d0f8444384ddacb6356b458c4c0c280',
+            'reference' => 'c018f6597465d496f04a9bfb99c9cdee5a107453',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
