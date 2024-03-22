@@ -21,6 +21,7 @@ class Router
         $urlActual = $_SERVER['PATH_INFO'] ?? '/';
         $metodo = $_SERVER['REQUEST_METHOD'];
 
+
         if ($metodo === 'GET') {
             $fn = $this->rutasGET[$urlActual] ?? null;
         } else {
