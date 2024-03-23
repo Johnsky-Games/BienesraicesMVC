@@ -22,7 +22,16 @@ class LoginController
                 if (!$resultado) {
                     $errores = Admin::getErrores();
                 } else {
-                    
+                    $autenticado = $auth->comprobarPassword($resultado);
+
+                    if ($autenticado) {
+                        //Autenticar el usuario
+                        $auth->autenticar();
+                    } else {
+                        //Mensaje de error en caso de que el password sea incorrecto
+                        $errores = Admin::getErrores();
+                    }
+
                 }
                 //Verificar el password
 
@@ -36,6 +45,10 @@ class LoginController
     }
     public static function logout()
     {
-        echo "Desde el controlador logout";
+        session_start();
+
+        $_SESSION = [];
+
+        header('Location: /');
     }
 }
